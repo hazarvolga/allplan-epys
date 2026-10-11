@@ -1,0 +1,241 @@
+.page-shell {
+  max-width: 1600px;
+  margin: auto;
+  padding: 30px var(--gutter) 70px;
+}
+.breadcrumb {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  font: 10px var(--font-mono);
+  color: var(--muted);
+  margin: 0 0 40px;
+}
+.breadcrumb a {
+  min-height: 24px;
+}
+.page-heading {
+  max-width: 1020px;
+  margin: 0 0 48px;
+}
+.page-heading h1 {
+  font-size: clamp(43px, 5.3vw, 82px);
+  margin: 25px 0;
+}
+.page-heading > p {
+  max-width: 760px;
+  font-size: 15px;
+  color: var(--muted);
+}
+.editorial {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  font: 9px/1.8 var(--font-mono);
+  padding: 18px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  color: var(--muted);
+}
+.editorial details {
+  width: 100%;
+}
+.editorial summary {
+  cursor: pointer;
+  min-height: 30px;
+}
+.article-layout {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 65px;
+}
+.article-toc {
+  font-size: 11px;
+  align-self: start;
+  position: sticky;
+  top: 125px;
+}
+.article-toc > span {
+  display: block;
+  margin-bottom: 20px;
+}
+.article-toc a {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--rule);
+  color: var(--muted);
+}
+.article-toc a:hover {
+  color: var(--accent);
+}
+.article-section {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr);
+  gap: 20px;
+  border-top: 1px solid var(--rule);
+  padding: 35px 0;
+}
+.article-section h2 {
+  font-size: clamp(29px, 3vw, 43px);
+  margin-bottom: 20px;
+}
+.article-section p {
+  color: var(--muted);
+  font-size: 13px;
+  max-width: 800px;
+}
+.article-list {
+  padding-left: 20px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.article-list li {
+  padding: 8px 0;
+}
+.related-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 30px;
+  padding: 25px 0;
+  border-top: 1px solid var(--rule);
+  font-size: 11px;
+}
+.related-links a {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.faq-item {
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+.faq-item summary {
+  font-size: 16px;
+  font-weight: 550;
+  min-height: 75px;
+  padding: 22px 36px 22px 0;
+  cursor: pointer;
+}
+.faq-item p {
+  padding: 0 20px 22px 0;
+  max-width: 850px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.resource-assets {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.resource-assets a {
+  border: 1px solid var(--rule);
+  padding: 20px;
+}
+.todo-notice {
+  padding: 22px;
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  font-size: 13px;
+  margin: 25px 0;
+}
+.todo-notice .mono {
+  color: var(--accent);
+  display: block;
+  margin-bottom: 12px;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 900px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 12px;
+}
+.field:has(textarea) {
+  grid-column: 1/-1;
+}
+.input {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid var(--rule);
+  background: transparent;
+  color: var(--ink);
+  border-radius: 0;
+}
+.input:focus {
+  border-color: var(--accent);
+}
+textarea.input {
+  min-height: 130px;
+  resize: vertical;
+}
+.input:disabled {
+  opacity: 0.55;
+}
+.field-error {
+  color: var(--accent);
+  font-size: 11px;
+}
+.form-status {
+  grid-column: 1/-1;
+  padding: 15px 0;
+  font-size: 13px;
+}
+.form-status[role="alert"] {
+  color: var(--accent);
+}
+.consent-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  grid-column: 1/-1;
+  font-size: 12px;
+}
+.consent-label a {
+  text-decoration: underline;
+}
+.consent-label input {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: 4px;
+  accent-color: var(--accent);
+}
+.form-grid > .button {
+  justify-self: start;
+}
+.demo-form-wrap {
+  margin: 30px 0 55px;
+}
+.demo-form-wrap > p {
+  font-size: 13px;
+  color: var(--muted);
+}
+.legal-draft h2 {
+  font-size: 30px;
+  margin: 25px 0 16px;
+}
+.legal-draft p {
+  font-size: 13px;
+  color: var(--muted);
+}
+.not-found {
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  padding: 50px var(--gutter);
+}
+.not-found h1 {
+  font-size: clamp(45px, 7vw, 100px);
+}
+.not-found .button {
+  align-self: start;
+}

@@ -1,0 +1,12 @@
+node_modules
+.next
+.git
+.env*
+outputs
+tests
+playwright-report
+test-results
+coverage
+*.pdf
+*.docx
+Projelerin*

@@ -1,0 +1,8 @@
+node_modules
+.next
+pnpm-lock.yaml
+coverage
+outputs
+*.pdf
+*.docx
+docs/blueprint.md
